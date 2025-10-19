@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Alert from "../animations/Alert"; // <-- Importe o Alert
+import Alert from "../animations/alert";
 
 const PlanCard = ({ onNotImplemented }) => {
     return (

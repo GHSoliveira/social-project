@@ -4,7 +4,7 @@ import { User, X, Edit3 } from "lucide-react";
 import { useUserStore } from "../store/Users";
 import { usePostStore } from "../store/Posts";
 import ImagePreviewer from "../components/ui/ImagePreviewer";
-import Alert from "../animations/Alert";
+import Alert from "../animations/alert";
 
 const ModalConfig = ({ onClose, onSuccess }) => {
     const { whoIsLogged, updateProfilePicture } = useUserStore();

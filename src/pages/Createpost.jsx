@@ -6,7 +6,7 @@ import { configurations } from "../config/Configurations";
 import Header from "../components/common/Header";
 import Sidebar from "../components/common/Sidebar";
 import ImagePreviewer from "../components/ui/ImagePreviewer";
-import Alert from "../animations/Alert";
+import Alert from "../animations/alert";
 
 const CreatePost = () => {
     const { whoIsLogged, isLoggedIn } = useUserStore();

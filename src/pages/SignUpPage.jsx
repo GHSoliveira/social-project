@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUserStore } from "../store/Users";
-import Alert from "../animations/Alert";
+import Alert from "../animations/alert";
 import PasswordStrengthMeter from "../components/ui/PassStrengthMeter";
-import { Eye, EyeOff } from "lucide-react"; // Renomeado para mais clareza
-
+import { Eye, EyeOff } from "lucide-react";
 const SignUpPage = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");

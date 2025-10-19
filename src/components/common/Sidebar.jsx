@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import * as LucideIcons from "lucide-react";
 import { useUserStore } from "../../store/Users";
-import Alert from "../../animations/Alert";
+import Alert from "../../animations/alert";
 
 const Sidebar = ({ isLogged, configs }) => {
     const [isOpen, setIsOpen] = useState(true);

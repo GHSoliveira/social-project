@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react"; // <-- Importe useState
 import { Loader } from "lucide-react";
 import { MiniCard } from "./Card";
-import Alert from "../../animations/Alert";
+import Alert from "../../animations/alert";
 
 const MostLiked = ({ content }) => {
     const sortedPosts = useMemo(() => {

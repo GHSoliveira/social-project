@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MessageCircle, ThumbsDown, ThumbsUp } from "lucide-react";
 import FloatingMenuComment from "./FloatingMenuComment";
-import Alert from "../../animations/Alert"; // <-- Importe o Alert
+import Alert from "../../animations/alert"; // <-- Importe o Alert
 
 const CommentCard = ({ postId, comment }) => {
     const { user, content, id } = comment;

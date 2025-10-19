@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Search, Settings } from "lucide-react";
-import Alert from "../../animations/Alert"; // <-- Importe o Alert
+import Alert from "../../animations/alert"; // <-- Importe o Alert
 
 const Header = ({ where, user, isLogged }) => {
     const [alert, setAlert] = useState({ show: false, type: "", where: "" });

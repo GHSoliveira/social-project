@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Alert from "../animations/Alert";
+import Alert from "../animations/alert";
 import { useUserStore } from "../store/Users";
 import { Eye, EyeClosed } from "lucide-react";
 

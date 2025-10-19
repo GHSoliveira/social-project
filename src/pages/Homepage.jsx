@@ -8,7 +8,7 @@ import Header from "../components/common/Header";
 import Sidebar from "../components/common/Sidebar";
 import MostLiked from "../components/posts/Mostliked";
 import Feed from "../components/posts/Feed";
-import Alert from "../animations/Alert";
+import Alert from "../animations/alert";
 
 const Homepage = () => {
     const posts = usePostStore((state) => state.posts);

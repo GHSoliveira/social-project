@@ -4,7 +4,7 @@ import { useState } from "react";
 import { usePostStore } from "../../store/Posts";
 import FloatingMenu from "./FloatingMenu.jsx";
 import { useUserStore } from "../../store/Users";
-import Alert from "../../animations/Alert.jsx";
+import Alert from "../../animations/alert.jsx";
 import CommentsSection from "./CommentsSection";
 import ModalEdition from "./ModalEdition";
 
