@@ -18,7 +18,7 @@ export default function ImagePreviewer({ value, onChange, size }) {
                 value={value}
                 onChange={(e) => {
                     onChange(e.target.value);
-                    setHasError(false); // reseta erro ao digitar
+                    setHasError(false);
                 }}
             />
 

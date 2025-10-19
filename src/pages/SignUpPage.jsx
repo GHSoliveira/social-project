@@ -30,12 +30,11 @@ const SignUpPage = () => {
             return;
         }
 
-        // Sucesso! Mostra o alerta e navega após um pequeno delay
         setAlertInfo({ show: true, type: "success", message: "Cadastro realizado com sucesso!" });
 
         setTimeout(() => {
             navigate("/home");
-        }, 1500); // Espera 1.5 segundos para o usuário ver a mensagem
+        }, 1500);
     };
 
     return (
@@ -44,7 +43,7 @@ const SignUpPage = () => {
                 <Alert
                     type={alertInfo.type}
                     message={alertInfo.message}
-                    onClose={() => setAlertInfo(prev => ({ ...prev, show: false }))} // <-- CORREÇÃO DO ONCLOSE
+                    onClose={() => setAlertInfo(prev => ({ ...prev, show: false }))}
                 />
             )}
             <div className="w-[30rem] bg-gray-200/8 rounded-2xl backdrop-filter backdrop-blur-xl flex flex-col items-center p-8">

@@ -6,14 +6,12 @@ const Alert = ({ type = 'info', where = 'global', message: customMessage, durati
     useEffect(() => {
         const timer = setTimeout(() => {
             setVisible(false);
-            // Espera a animação de fade-out terminar antes de chamar onClose
             setTimeout(onClose, 300);
         }, duration);
 
         return () => clearTimeout(timer);
     }, [duration, onClose]);
 
-    // Estilos de cor baseados no tipo do alerta
     const typeStyles = {
         success: 'bg-gradient-to-r from-green-500 to-emerald-600',
         fail: 'bg-gradient-to-r from-red-500 to-red-700',
@@ -22,7 +20,6 @@ const Alert = ({ type = 'info', where = 'global', message: customMessage, durati
         userExists: 'bg-gradient-to-r from-orange-600 to-yellow-500 text-black'
     };
 
-    // Emojis para cada tipo de alerta
     const emojis = {
         success: '✅',
         fail: '✖️',
@@ -33,7 +30,6 @@ const Alert = ({ type = 'info', where = 'global', message: customMessage, durati
         notAllowed: '🚫'
     };
 
-    // Mensagens predefinidas (usadas apenas como fallback)
     const predefinedMessages = {
         login: {
             fail: 'Falha no login! Usuário ou senha incorretos.',
@@ -48,10 +44,7 @@ const Alert = ({ type = 'info', where = 'global', message: customMessage, durati
         }
     };
 
-    // Lógica para decidir qual mensagem exibir:
-    // 1. Tenta usar a 'customMessage' passada via props.
-    // 2. Se não houver, tenta usar as mensagens predefinidas.
-    // 3. Se nada funcionar, usa um fallback final.
+
     const message = customMessage || predefinedMessages[where]?.[type] || "Ocorreu um erro inesperado.";
     const emoji = emojis[type] || '🔵';
 

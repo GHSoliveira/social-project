@@ -12,10 +12,8 @@ const Sidebar = ({ isLogged, configs }) => {
     const whoIsLogged = useUserStore((state) => state.whoIsLogged);
     const logout = useUserStore((state) => state.logout);
 
-    // Se estiver logado, pega o usuário da store
     const user = isLogged ? whoIsLogged : null;
 
-    // Se está logado mas não tem usuário ou foto, não renderiza
     if (isLogged && (!user || !user.profilePicture)) {
         return null;
     }
@@ -29,7 +27,6 @@ const Sidebar = ({ isLogged, configs }) => {
         setAlert({ show: true, type: 'warning', where: 'global', message: 'Funcionalidade ainda não implementada!' });
     };
 
-    // Filtra opções conforme login
     const filteredConfigs = isLogged
         ? configs
         : configs.filter((config) => !config.needLogin);

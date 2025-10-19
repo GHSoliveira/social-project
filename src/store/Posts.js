@@ -134,7 +134,7 @@ export const usePostStore = create(
         })),
     }),
     {
-      name: "post-storage", // key do localStorage
+      name: "post-storage",
     }
   )
 );

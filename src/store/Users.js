@@ -20,7 +20,6 @@ export const useUserStore = create(
       whoIsLogged: null,
       isLoggedIn: false,
 
-      // Login: verifica e seta usuário logado
       login: (email, password) => {
         const user = get().users.find(
           (u) => u.email === email && u.password === password
@@ -32,12 +31,10 @@ export const useUserStore = create(
         return false;
       },
 
-      // Logout: limpa usuário logado
       logout: () => {
         set({ whoIsLogged: null, isLoggedIn: false });
       },
 
-      // Cadastro
       addUser: (username, email, password) => {
         const exists = get().users.some(
           (u) => u.email === email || u.username === username
@@ -46,8 +43,8 @@ export const useUserStore = create(
 
         const newUser = new User(
           username,
-          "Newbie", // Role padronizada
-          "https://i.pravatar.cc/150", // Imagem de placeholder melhor
+          "Newbie",
+          "https://i.pravatar.cc/150",
           "Oi, sou novo por aqui!",
           email,
           password,
@@ -56,12 +53,11 @@ export const useUserStore = create(
         set((state) => ({
           users: [...state.users, newUser],
           whoIsLogged: newUser,
-          isLoggedIn: true, // já loga o usuário após cadastro
+          isLoggedIn: true,
         }));
         return newUser;
       },
 
-      // Atualizar foto perfil
       updateProfilePicture: (newPicture) => {
         const logged = get().whoIsLogged;
         if (!logged) return;
@@ -77,7 +73,6 @@ export const useUserStore = create(
         });
       },
 
-      // Atualizar bio (exemplo)
       updateBio: (newBio) => {
         const logged = get().whoIsLogged;
         if (!logged) return;

@@ -16,7 +16,6 @@ const LoginPage = () => {
         where: "",
     });
 
-    // Pega funções e estado da store
     const login = useUserStore((state) => state.login);
     const whoIsLogged = useUserStore((state) => state.whoIsLogged);
 
@@ -106,7 +105,6 @@ const LoginPage = () => {
                     type="button"
                     onClick={() => {
                         navigate("/home");
-                        // Para entrar como convidado, limpa o usuário logado
                         useUserStore.getState().logout();
                     }}
                 >

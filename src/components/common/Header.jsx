@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Search, Settings } from "lucide-react";
-import Alert from "../../animations/alert"; // <-- Importe o Alert
-
+import Alert from "../../animations/alert";
 const Header = ({ where, user, isLogged }) => {
     const [alert, setAlert] = useState({ show: false, type: "", where: "" });
 
@@ -19,14 +18,14 @@ const Header = ({ where, user, isLogged }) => {
 
                 <div
                     className="bg-gradient-to-r from-[#1a1a1a] to-[#2a2a2a] hover:from-white hover:to-white text-white hover:text-black transition-colors duration-300 w-2xs p-2 rounded-4xl flex gap-4 items-center border-1 border-gray-600 cursor-pointer"
-                    onClick={handleNotImplemented} // <-- Adicionado onClick
+                    onClick={handleNotImplemented}
                 >
                     <Search className="" />
                     <input
-                        className="focus:outline-none bg-transparent text-white placeholder:text-gray-400 pointer-events-none" // <-- pointer-events-none para o clique passar para o div pai
+                        className="focus:outline-none bg-transparent text-white placeholder:text-gray-400 pointer-events-none"
                         type="text"
                         placeholder="pesquisa..."
-                        readOnly // <-- Apenas leitura
+                        readOnly
                     />
                 </div>
             </div>
