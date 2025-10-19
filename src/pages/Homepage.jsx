@@ -6,7 +6,7 @@ import { useUserStore } from "../store/Users";
 import { configurations } from "../config/Configurations";
 import Header from "../components/common/Header";
 import Sidebar from "../components/common/Sidebar";
-import MostLiked from "../components/posts/MostLiked";
+import MostLiked from "../components/posts/Mostliked";
 import Feed from "../components/posts/Feed";
 import Alert from "../animations/Alert";
 
