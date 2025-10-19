@@ -2,9 +2,17 @@
 
 Bem-vindo ao **DevFeed**! Uma aplicação web moderna e dinâmica de feed social construída com React, Zustand e Tailwind CSS. Este projeto foi desenvolvido para demonstrar habilidades em desenvolvimento front-end, incluindo gerenciamento de estado global, autenticação de usuário, interações em tempo real e componentização modular.
 
-### ✨ Demonstração Visual
+### ✨ Demonstração de Criação de User
 
 ![Demonstração de criação de User](./assets/createuser2.gif)
+
+### ✨ Demonstração de Login
+
+![Demonstração de Login](./assets/Login.gif)
+
+### ✨ Demonstração do Feed com posts de exemplo
+
+![Demonstração de Login](./assets/Feed.gif)
 
 ---
 
