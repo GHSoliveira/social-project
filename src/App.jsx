@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
-import Createpost from "./pages/CreatePost.jsx";
+import Createpost from "./pages/Createpost.jsx";
 import Profile from "./pages/Profile.jsx";
 import ChangePlan from "./pages/ChangePlan.jsx";
 
