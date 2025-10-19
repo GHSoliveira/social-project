@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"; // <-- Importe useState
+import { useMemo, useState } from "react";
 import { Loader } from "lucide-react";
 import { MiniCard } from "./Card";
 import Alert from "../../animations/alert";
@@ -30,8 +30,8 @@ const MostLiked = ({ content }) => {
                 </div>
                 {(!content || content.length === 0) ? (
                     <div className="flex items-center mt-8">
-                        <Loader className="animate-spin text-cyan-400" />
-                        <span className="text-cyan-400 ml-2">Procurando conteúdo...</span>
+                        <Loader className="animate-spin text-white" />
+                        <span className="text-white ml-2">Procurando conteúdo...</span>
                     </div>
                 ) : (
                     <p className="text-gray-500 mt-8">Nenhum post para exibir aqui ainda.</p>
